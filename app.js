@@ -14,7 +14,7 @@ const { PORT = 3000 } = process.env;
 const app = express();
 app.use(cors);
 mongoose
-  .connect(NODE_ENV === 'production' ? BASE_URL : 'mongodb://localhost:27017/bitfilmsdb', {
+  .connect(NODE_ENV === 'production' ? BASE_URL : 'mongodb://localhost:27017/moviesdb', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });

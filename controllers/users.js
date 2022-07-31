@@ -69,9 +69,12 @@ module.exports.updateUser = (req, res, next) => {
     })
     .catch((err) => {
       if (err.name === 'ValidationError') {
-        return next(new BadReqError('Введены некорректные данные'));
+        next(new BadReqError('Введены некорректные данные'));
+      } else if (err.code === 11000) {
+        next(new ConflictError('Такой пользователь уже зарегистрирован!)'));
+      } else {
+        next(err);
       }
-      return next(err);
     });
 };
 
