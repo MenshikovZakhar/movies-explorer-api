@@ -10,7 +10,7 @@ const cors = require('./middlewares/cors');
 const limiter = require('./middlewares/rate-limiter');
 
 const { NODE_ENV, BASE_URL } = process.env;
-const { PORT = 3000 } = process.env;
+const { PORT = 3001 } = process.env;
 const app = express();
 app.use(cors);
 mongoose
