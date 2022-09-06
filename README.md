@@ -19,7 +19,7 @@ https://api.domainname.movies.nomoredomains.xyz
 5.Сохранение\удаление найденных фильмов в своем личном кабинете
 
 ## Стэк
-1.Node.js
-2.MongoDB
-3.Express.js
-4.Mongoose
+1.Node.js;
+2.MongoDB;
+3.Express.js;
+4.Mongoose.
